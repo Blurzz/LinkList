@@ -1,9 +1,9 @@
 <html>
 <head>
   <title>Express HTML</title>
-  <script src="/scripts/linkList.js">
-
-  </script>
+  <script src="/scripts/linkList.js"></script>
+  <script src="/scripts/jslitmus.js"></script>
+  <script src="/scripts/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
@@ -12,21 +12,22 @@
 <body>
   <div style="margin:100px;">
     <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container">
-    <a class="navbar-brand" href="/">Express HTML</a>
-    <ul class="nav navbar-nav">
-      <li class="active">
-        <a href="/">Home</a>
-      </li>
-      <li>
-        <a href="/about">About</a>
-      </li>
-      <li>
-        <a href="/sitemap">Sitemap</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <div id="test_element" style="overflow:hidden; width: 1px; height:1px;"></div>
+      <div class="container">
+        <a class="navbar-brand" href="/">Express HTML</a>
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/sitemap">Sitemap</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="jumbotron"  style="padding:40px;">
       <h1>Link List demo</h1>
       <p>This is a simple link list demo, can handle link list easily.</p>
@@ -36,7 +37,8 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">Delete component</a>
         <a class="btn btn-primary btn-lg" href="#" role="button">Reverse linklist</a>
       </p>
-      <p>Result: <textarea name="name" rows="8" cols="80"></textarea></p>
+      <p>Result:</p>
+      <textarea name="name" rows="8" cols="80"></textarea>
     </div>
   </div>
 </body>
